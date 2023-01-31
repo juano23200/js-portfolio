@@ -1,4 +1,7 @@
-const API = 'https://randomuser.me/api/';
+
+/* Se manda a llamar-traer la API desde las variables de entorno que se encuentran
+   en el archivo /src/.env */
+const API = process.env.API;
 
 const getData = async (id) => {
   const apiURl = id ? `${API}${id}` : API;

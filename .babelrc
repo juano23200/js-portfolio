@@ -1,0 +1,18 @@
+/* Se crea un objeto donde vamos a añadir las configuraciones que acabamos
+   de agregar, en este caso:
+   
+   1. los presets se utilizan para trabajar con JavaScript moderno,
+       dentro de un arreglo se establecen todos los paquetes a utilizar . y
+   2. los plugins que tambien van a utilizar Babel */
+
+/*Archivo de configuracion para que babel entienda como va a trabajar con JavaScript
+  asi como tambien con que particularidades de codigo va a tener mas atencion, en
+  este caso con el plugin de plugin-transform-runtime*/
+   {
+    "presets": [
+      "@babel/preset-env"
+    ],
+    "plugins": [
+      "@babel/plugin-transform-runtime"
+    ]
+  }
